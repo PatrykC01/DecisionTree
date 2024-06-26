@@ -1,0 +1,32 @@
+[class*="col"] {
+  padding: 1rem;
+  background-color: rgb(22, 108, 188);
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+button {
+  font-weight: bold;
+}
+
+.form-select option:selected {
+    background-color: salmon;
+  }
+  
+.input-group button, .input-group input{
+    width: 3em;
+    height: 3em;
+    font-size: .8em;
+    font-weight: bold;
+}
+

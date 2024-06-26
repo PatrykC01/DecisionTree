@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Grid</title>
+  </head>
+  <body>
+    <div class="container my-5 bg-warning">
+      <div class="row g-3 mt-2">
+        <div class="col-sm-12 h2">Atrybuty</div>
+        <div class="col-6 col-md-1">1</div>
+        <div class="col-6 col-md-1">2</div>
+        <div class="col-6 col-md-2">3</div>
+        <div class="col-6 col-md-2">4</div>
+        <div class="col-sm-12 h2">Parametry</div>
+        <div class="col-6 h4">Miara zanieczyszczenia:</div>
+        <div class="col-6 h4 d-flex">
+          <select class="form-select" aria-label="Wybierz kategorie">
+            <option value="1" selected>Entropia</option>
+            <option value="2">Wskaźnik Giniego</option>
+            <option value="3">Błąd klasyfikacji</option>
+          </select>
+        </div>
+        <div class="col-6 h4 d-flex justify-content-center align-items-center">
+          Maksymalna głębokość:
+        </div>
+        <div class="col-6 h4">
+          <div class="input-group">
+            <button
+              class="btn btn-danger"
+              type="button"
+              id="button-minus"
+              aria-label="Zmniejsz głębokość drzewa"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              class="form-control text-center"
+              id="depthValueInput"
+              aria-label="Głębokość drzewa"
+              aria-describedby="button-minus button-plus"
+              value="1"
+              ;
+            />
+            <button
+              class="btn btn-success"
+              type="button"
+              id="button-plus"
+              aria-label="Zwiększ głębokość drzewa"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <button id="generateBtn" class="btn-success px-5 py-3 fs-5">
+            Wygeneruj
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
