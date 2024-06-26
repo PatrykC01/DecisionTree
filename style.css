@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,29 +11,47 @@ body {
   min-height: 100vh;
 }
 
+/*sm*/
 @media screen and (min-width: 576px) {
   * {
     font-size: 18px !important;
   }
+  .container {
+    border-radius: 5px;
+    padding: 25px 20px !important;
+  }
 }
+/*md*/
 @media screen and (min-width: 768px) {
   * {
-    
+    font-size: 24px !important;
+  }
+  .container {
+    padding: 25px 30px !important;
   }
 }
+/*lg*/
 @media screen and (min-width: 992px) {
   * {
-    
+  }
+  .container {
+    padding: 25px 40px !important;
   }
 }
+/*xl*/
 @media screen and (min-width: 1200px) {
   * {
-    
+  }
+  .container {
+    padding: 25px 60px !important;
   }
 }
+/*xxl*/
 @media screen and (min-width: 1400px) {
   * {
-    
+  }
+  .container {
+    padding: 25px 80 !important;
   }
 }
 
@@ -41,10 +59,10 @@ body {
   padding: 1rem;
   background-color: rgb(22, 108, 188);
   border: 2px solid #fff;
+  border-radius: 3px;
   color: #fff;
   text-align: center;
 }
-
 
 .input-group button,
 .input-group input {
@@ -54,5 +72,4 @@ body {
 
 h4 {
   font-size: 1.2rem !important;
-  color: red;
 }
