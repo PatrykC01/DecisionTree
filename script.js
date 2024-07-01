@@ -24,3 +24,4 @@ generateBtn.onclick = async function () {
     console.error('Error fetching databases:', error);
   }
 };
+
